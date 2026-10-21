@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --color-ink: #12241c;
+  --color-moss: #0f5c45;
+  --color-leaf: #147a56;
+  --color-forest: #0b3d2e;
+  --color-mint: #e8f4ee;
+  --color-foam: #f3faf6;
+  --color-sand: #f6f4ef;
+  --color-cream: #fbfaf7;
+  --color-stone: #6f7b74;
+  --color-line: #e4e7e3;
+  --color-gold: #c4a574;
+  --shadow-card: 0 1px 2px rgba(18, 36, 28, 0.04), 0 12px 32px -16px rgba(18, 36, 28, 0.12);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f6f4ef;
+  color: #12241c;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+}
+
+::selection {
+  background: #cde8d8;
+  color: #0b3d2e;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.grid-map {
+  background-color: #eef4ef;
+  background-image:
+    linear-gradient(rgba(15, 92, 69, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 92, 69, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 30% 40%, rgba(20, 122, 86, 0.12), transparent 45%),
+    radial-gradient(circle at 72% 62%, rgba(196, 165, 116, 0.16), transparent 40%);
+  background-size: 28px 28px, 28px 28px, 100% 100%, 100% 100%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
